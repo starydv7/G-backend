@@ -1,4 +1,3 @@
-import colors from 'colors';
 import express  from "express";
 import dotenv from "dotenv";
 import morgan from 'morgan';
@@ -39,5 +38,5 @@ app.use("/api/v1/category", categoryRoute)
 app.use("/api/v1/products",productRoute)
 
 app.listen(PORT, () => {
-    console.log(`server running on ${process.env.DEV_MODE} mode and on port ${PORT}`.bgCyan.bgYellow);
+    console.log(`server running on ${process.env.DEV_MODE} mode and on port ${PORT}`);
 })
