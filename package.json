@@ -6,7 +6,7 @@
   "proxy":"http://localhost:8080",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "npm run start",
     "server": "nodemon server.js",
     "client": "npm start --prefix ./client",
     "dev": "concurrently \"npm run server \" \"npm run client\""
